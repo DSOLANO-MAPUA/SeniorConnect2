@@ -4,7 +4,7 @@
 // Flask still owns the accounts and the API; PHP remembers WHO is logged in
 // (in $_SESSION) so protected pages can be blocked before any HTML is sent.
 
-const FLASK_API = "seniorconnect2-production.up.railway.app";
+const FLASK_API = "http://127.0.0.1:5000";
 const SESSION_LIFETIME = 7200; // 2 hours, same as the Flask JWT
 
 if (session_status() === PHP_SESSION_NONE) {
